@@ -35,6 +35,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
 
 @app.get("/protected", response_model=MessageResponse, tags=["protected"])
 async def protected_route(current_user: dict = Depends(get_current_user)):
+# kept it simple here
     """
     Example of a protected endpoint.
     """
