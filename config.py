@@ -4,6 +4,7 @@ from typing import Any
 
 from pydantic import BaseSettings, Field, validator
 from dotenv import load_dotenv
+# leaving a note for later
 
 # Load .env from project root
 BASE_DIR = Path(__file__).resolve().parent
