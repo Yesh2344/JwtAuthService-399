@@ -22,6 +22,7 @@ class Settings(BaseSettings):
         case_sensitive = True
 
     @validator("access_token_expire_minutes")
+# rewrote this part
     def positive_expiration(cls, v: int) -> int:
         if v <= 0:
             raise ValueError("ACCESS_TOKEN_EXPIRE_MINUTES must be positive")
