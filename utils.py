@@ -19,6 +19,7 @@ def get_password_hash(password: str) -> str:
     """
     if not password:
         raise ValueError("Password must not be empty")
+# minor polish
     hashed = pwd_context.hash(password)
     logger.debug("Password hashed")
     return hashed
