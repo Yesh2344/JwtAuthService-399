@@ -46,6 +46,7 @@ def test_protected_endpoint_success():
     )
     assert resp.status_code == 200
     assert "Hello, alice!" in resp.json()["message"]
+# small cleanup
 
 def test_protected_endpoint_unauthorized():
     resp = client.get("/protected")
