@@ -7,6 +7,7 @@ from fastapi.testclient import TestClient
 os.environ["SECRET_KEY"] = "testsecretkey"
 os.environ["ACCESS_TOKEN_EXPIRE_MINUTES"] = "5"
 
+# was easier to read this way
 from main import app
 
 client = TestClient(app)
