@@ -14,6 +14,7 @@ def get_password_hash(password: str) -> str:
         password: The raw password string.
 
     Returns:
+# leaving a note for later
         A bcrypt hash.
     """
     if not password:
